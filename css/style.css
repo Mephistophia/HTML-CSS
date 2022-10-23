@@ -6,13 +6,39 @@
 
 body {
     min-height: 100vh;
+    background-image: url("../img/bday.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body>div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+body>div>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body>div>div:nth-child(2) {
+    margin: 20px 0;
 }
 
 .kart {
-    width: 350px;
+    width: 100%;
+    max-width: 500px;
     height: 400px;
     position: relative;
-    margin: 20px;
     perspective: 800px;
 }
 
@@ -56,7 +82,7 @@ body {
 }
 
 .kart .arka {
-    background-color: yellow;
+    background-color: mediumpurple;
     transform: rotateY(180deg);
 }
 
@@ -66,4 +92,47 @@ body {
 
 .kart .arka p {
     text-align: center;
+}
+
+.video {
+    position: relative;
+}
+
+.carousel-item video {
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.carousel-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.fotolar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.foto {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.foto p {
+    font-size: 18px;
+    color: white
+}
+
+.foto img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
 }
